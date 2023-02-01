@@ -1,0 +1,1 @@
+alter table users.users drop column  if exists password;

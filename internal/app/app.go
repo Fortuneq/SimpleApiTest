@@ -28,4 +28,5 @@ func Run() {
 	defer log.Info().Msg("Application has been shut down")
 
 	log.Debug().Msg("Loaded configuration")
+
 }
