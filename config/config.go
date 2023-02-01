@@ -8,6 +8,11 @@ import (
 type (
 	Config struct {
 		PostgreSQL Postgres `validate:"required"`
+		Logger     Logger   `mapstructure:"logger" validate:"required"`
+	}
+
+	Logger struct {
+		Level *int `mapstructure:"level" validate:"required"`
 	}
 	Postgres struct {
 		DbName   string `validate:"required"`
